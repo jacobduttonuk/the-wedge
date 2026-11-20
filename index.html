@@ -200,8 +200,8 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
   </header>
 
   <div class="hero">
-    <h1>Cold emails get deleted. <span class="hl">This lands on their desk.</span></h1>
-    <p class="lede">Every week we find the brand most likely to hire your agency right now, write a sharp idea for them in your name, and post it to the person who decides. Your email follows the next day, so it isn't cold any more. Plus four more brands worth a call, with the research and emails done.</p>
+    <h1>Every Monday, the five brands most likely to hire you. <span class="hl">And how to get in.</span></h1>
+    <p class="lede">For each one: who decides and what they care about, why now, the angle in, which of your case studies proves it, an idea for a first move your studio could make, and a first email. You do the creative. We do the digging.</p>
     <form class="signup" id="start" action="https://formsubmit.co/hello@thewedgebrief.com" method="POST">
       <label for="f-email">Work email</label>
       <input id="f-email" type="email" name="email" placeholder="Work email" required autocomplete="email">
@@ -218,9 +218,142 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
     <p class="fine" style="margin:12px 0 0">No card. £299 a month after. Cancel any time. Already had an email from us? Just reply "yes".</p>
   </div>
 
-  <section class="first" aria-labelledby="post-h" style="padding-top:8px">
+
+  <!-- Sample pack -->
+  <article class="pack" aria-label="Sample Monday pack">
+    <div class="pack-head"><span>The research behind it · sample Monday brief, 16 Nov 2026</span><span>Pick your kind of agency</span></div>
+    <div class="tabs" role="tablist" aria-label="Sample by agency type">
+      <button role="tab" aria-selected="true" aria-controls="p-brand" id="t-brand">Brand and launch</button>
+      <button role="tab" aria-selected="false" aria-controls="p-social" id="t-social">Social and content</button>
+      <button role="tab" aria-selected="false" aria-controls="p-pr" id="t-pr">PR</button>
+      <button role="tab" aria-selected="false" aria-controls="p-b2b" id="t-b2b">B2B</button>
+    </div>
+    <div class="panel pack-body" role="tabpanel" id="p-brand" aria-labelledby="t-brand">
+      <div class="pack-col">
+        <p class="brand">iCAUR UK</p>
+        <span class="trigger">Trigger: new head of marketing · 19 Nov 2026</span>
+        <dl>
+          <div><dt>Why now</dt><dd>Chery's new car brand has hired a head of marketing to build its team and agency partners ahead of its first UK model in 2027. The roster is being chosen now. <span class="src">Source: Motor Trader, 19 Nov 2026</span></dd></div>
+          <div><dt>Who decides</dt><dd>Claire Andrews, head of marketing. Came up through events, retail and territory management at Mazda UK before becoming its marketing director. <span class="src">Source: AM Online, Motor Trader</span></dd></div>
+          <div><dt>What she'll respond to</dt><dd>Launch work judged on showroom visits and dealer results, not just awareness. Her career has been close to the retail end.</dd></div>
+          <div><dt>Lead with</dt><dd>Your strongest launch case study, framed around footfall and first-year sales.</dd></div>
+          <div><dt>When</dt><dd>Within the next three weeks, while the agency line-up is still open.</dd></div>
+          <div><dt>First move for your studio</dt><dd>Send Claire a prototype "day-one showroom kit": the launch story every dealer gets, as a box she can hold.</dd></div>
+        </dl>
+      </div>
+      <div class="pack-col">
+        <div class="pov">
+          <h4>The angle in: "Winning the first 90 days in UK showrooms"</h4>
+          <ol>
+            <li>Launch the dealers before the public: a dealer-first launch kit so every showroom tells the same story on day one.</li>
+            <li>Test drives as the media plan: book-a-drive as the main call to action, measured weekly.</li>
+            <li>Borrow trust early: owner stories from markets where the brand already sells, cut for UK audiences.</li>
+          </ol>
+          
+        </div>
+        <details class="mail" open>
+          <summary>Email 1 of 3 · send this week</summary>
+          <p>Hi Claire, congrats on the iCAUR role. Launching a car brand into UK showrooms from scratch is a rare brief. We helped [your launch client] get people through the door in their first year, not just get noticed. I've put down three thoughts on the first 90 days. Would a short call be useful while you're putting the agency line-up together?</p>
+        </details>
+        <details class="mail">
+          <summary>Email 2 of 3 · one week later</summary>
+          <p>Hi Claire, just following up. The dealer-first idea is the one I'd most like to talk through, as it's where launches like this are usually won or lost. Happy to keep it to 20 minutes.</p>
+        </details>
+        <details class="mail">
+          <summary>Email 3 of 3 · two weeks later</summary>
+          <p>Hi Claire, I'll leave it here for now. If the agency line-up is still open in the new year, we'd love to be in the conversation. Good luck with the launch.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="panel pack-body" role="tabpanel" id="p-social" aria-labelledby="t-social" hidden>
+      <div class="pack-col">
+        <p class="brand">LEON</p>
+        <span class="trigger">Trigger: new CMO · 16 Nov 2026</span>
+        <dl>
+          <div><dt>Why now</dt><dd>LEON has a new chief marketing officer whose brief is customer love, loyalty and like-for-like sales. Loyalty and community are social's home ground. <span class="src">Source: Retail Times, 16 Nov 2026</span></dd></div>
+          <div><dt>Who decides</dt><dd>Romy Miller, CMO. Spent 2013 to 2021 as marketing and commercial director at GAIL's, helping grow it to 80 bakeries and a £200m sale. <span class="src">Source: Retail Times</span></dd></div>
+          <div><dt>What she'll respond to</dt><dd>Regulars, not reach. Her track record is building a brand people return to every week.</dd></div>
+          <div><dt>Lead with</dt><dd>Your best community or loyalty case study, framed around repeat visits.</dd></div>
+          <div><dt>First move for your studio</dt><dd>Send LEON's head office team lunch, with a menu card of real regulars' stories pulled from their own reviews.</dd></div>
+        </dl>
+      </div>
+      <div class="pack-col">
+        <div class="pov">
+          <h4>The angle in: "Turning LEON's regulars into its media"</h4>
+          <ol>
+            <li>Make the regulars the content: a weekly series built from real customers and their usual orders.</li>
+            <li>Reward the habit in public: loyalty moments people want to share, not points.</li>
+            <li>One local story per restaurant per month, so social drives like-for-likes, not just likes.</li>
+          </ol>
+        </div>
+        <details class="mail" open>
+          <summary>Email 1 of 3 · send this week</summary>
+          <p>Hi Romy, congrats on the LEON role. What you built at GAIL's is the kind of brand people come back to every week, and that's the bit social does best when it's done well. I've got three ideas for turning LEON's regulars into its media. Would a short call be useful?</p>
+        </details>
+      </div>
+    </div>
+    <div class="panel pack-body" role="tabpanel" id="p-pr" aria-labelledby="t-pr" hidden>
+      <div class="pack-col">
+        <p class="brand">Space NK</p>
+        <span class="trigger">Trigger: promoted to CMO · 19 Nov 2026</span>
+        <dl>
+          <div><dt>Why now</dt><dd>Space NK's new CMO now runs PR, brand, CRM, store design and customer service, not just marketing channels. PR is newly hers. <span class="src">Source: PR Newswire, 19 Nov 2026</span></dd></div>
+          <div><dt>Who decides</dt><dd>Leanne Rouse, CMO. Nine years at Space NK, previously its marketing director. Led the record-breaking Cécred and Touchland launches. <span class="src">Source: PR Newswire</span></dd></div>
+          <div><dt>What she'll respond to</dt><dd>Launch moments that sell. Her proudest work is launches that broke commercial records.</dd></div>
+          <div><dt>Lead with</dt><dd>A beauty or retail launch where coverage turned into sales.</dd></div>
+          <div><dt>First move for your studio</dt><dd>Send Leanne a mocked-up front page announcing Space NK's next launch as news.</dd></div>
+        </dl>
+      </div>
+      <div class="pack-col">
+        <div class="pov">
+          <h4>The angle in: "Every launch a news story"</h4>
+          <ol>
+            <li>A launch calendar run as a newsroom, so each exclusive brand arrival earns its own coverage.</li>
+            <li>Store moments built for the press as much as for shoppers.</li>
+            <li>PR and CRM briefed together, so the story and the offer land in the same week.</li>
+          </ol>
+        </div>
+        <details class="mail" open>
+          <summary>Email 1 of 3 · send this week</summary>
+          <p>Hi Leanne, congrats on the CMO role. With PR now in your remit, I thought it might help to share how we'd make every Space NK launch its own news story. Would a short call be useful in the new year?</p>
+        </details>
+      </div>
+    </div>
+    <div class="panel pack-body" role="tabpanel" id="p-b2b" aria-labelledby="t-b2b" hidden>
+      <div class="pack-col">
+        <p class="brand">Axa Commercial</p>
+        <span class="trigger">Trigger: new marketing director · Nov 2026</span>
+        <dl>
+          <div><dt>Why now</dt><dd>Axa Commercial has appointed a marketing and broker development director, joining marketing and broker relationships in one role. <span class="src">Source: Insurance Times, Nov 2026</span></dd></div>
+          <div><dt>Who decides</dt><dd>Carolyn Rich, marketing and broker development director.</dd></div>
+          <div><dt>What she'll respond to</dt><dd>Marketing that brokers actually use. Her role is judged on broker relationships as much as brand.</dd></div>
+          <div><dt>Lead with</dt><dd>A B2B case study where content or campaigns made a sales or partner channel more effective.</dd></div>
+          <div><dt>First move for your studio</dt><dd>Send Carolyn a ready-to-forward broker briefing, laid out in Axa's style with your name on it.</dd></div>
+        </dl>
+      </div>
+      <div class="pack-col">
+        <div class="pov">
+          <h4>The angle in: "Marketing brokers want to forward"</h4>
+          <ol>
+            <li>A monthly risk briefing brokers can send to their own clients under their name.</li>
+            <li>Broker-ready campaign kits, so local brokers run Axa campaigns in a day.</li>
+            <li>One shared measure for marketing and broker teams: quotes started through broker content.</li>
+          </ol>
+        </div>
+        <details class="mail" open>
+          <summary>Email 1 of 3 · send this week</summary>
+          <p>Hi Carolyn, congrats on the new role. Putting marketing and broker development together is a smart move, and it opens up some ideas we've seen work in B2B. Would a short call be useful?</p>
+        </details>
+      </div>
+    </div>
+    <div class="pack-foot">Every fact carries its source and date. Every Monday brief has five brands like this, picked for your kind of agency.</div>
+  </article>
+
+
+  <section aria-labelledby="post-h">
     <div class="post-grid">
-      <figure class="scene" aria-label="Sample of the posted envelope, printed point of view and handwritten note">
+      <figure class="scene" aria-label="Sample desk drop: a mailer in the agency's colours, a printed idea and a note">
         <div class="env paper-shadow">
           <div class="grain"></div>
           <div class="seal">Northfold</div>
@@ -247,150 +380,18 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
         </div>
       </figure>
       <div class="post-copy">
-        <h2 id="post-h">One brand a week. One thing they can't ignore.</h2>
-        <p>Inboxes are full. Desks aren't. Each week we pick the one brand with the best reason to hire you, print your idea for them on heavyweight card, with the headline on the outside, and post it to the person who decides. It lands the day before your first email. You see a preview first, and nothing goes in the post until you say yes.</p>
+        <h2 id="post-h">Want it on their desk? One click.</h2>
+        <p>When a lead's worth more than an email, we'll get something physical in front of them. Send us your design, or let us lay out the idea in your brand, and we'll print, pack and courier it to their office within 48 hours.</p>
         <ul>
-          <li>A rigid mailer in your agency's colours, with the idea's headline printed on the front</li>
-          <li>The point of view on heavyweight card, in your name</li>
-          <li>A short note in a handwriting-style print. Approve ours, or write your own in 30 seconds</li>
+          <li>Your studio's design, or our layout in your brand. Your call.</li>
+          <li>Printing, packing and courier handled. No trips to the post office.</li>
+          <li>Desk drops from £49 each, only when you want one</li>
         </ul>
-        <p>It's built to be left on a desk, pinned up and shown around, not opened and binned. When your email arrives, it's the follow-up to something they've already read.</p>
-        <p class="caption">Sample for illustration. Northfold Studio is a made-up agency, shown in its own colours.</p>
+        <p>Every lead already comes with an idea for a first move your studio could make. This is how it gets there.</p>
+        <p class="caption">Sample for illustration. Northfold Studio is a made-up agency.</p>
       </div>
     </div>
   </section>
-
-  <!-- Sample pack -->
-  <article class="pack" aria-label="Sample Monday pack">
-    <div class="pack-head"><span>The research behind it · sample Monday brief, 16 Nov 2026</span><span>Pick your kind of agency</span></div>
-    <div class="tabs" role="tablist" aria-label="Sample by agency type">
-      <button role="tab" aria-selected="true" aria-controls="p-brand" id="t-brand">Brand and launch</button>
-      <button role="tab" aria-selected="false" aria-controls="p-social" id="t-social">Social and content</button>
-      <button role="tab" aria-selected="false" aria-controls="p-pr" id="t-pr">PR</button>
-      <button role="tab" aria-selected="false" aria-controls="p-b2b" id="t-b2b">B2B</button>
-    </div>
-    <div class="panel pack-body" role="tabpanel" id="p-brand" aria-labelledby="t-brand">
-      <div class="pack-col">
-        <p class="brand">iCAUR UK</p>
-        <span class="trigger">Trigger: new head of marketing · 19 Nov 2026</span>
-        <dl>
-          <div><dt>Why now</dt><dd>Chery's new car brand has hired a head of marketing to build its team and agency partners ahead of its first UK model in 2027. The roster is being chosen now. <span class="src">Source: Motor Trader, 19 Nov 2026</span></dd></div>
-          <div><dt>Who decides</dt><dd>Claire Andrews, head of marketing. Came up through events, retail and territory management at Mazda UK before becoming its marketing director. <span class="src">Source: AM Online, Motor Trader</span></dd></div>
-          <div><dt>What she'll respond to</dt><dd>Launch work judged on showroom visits and dealer results, not just awareness. Her career has been close to the retail end.</dd></div>
-          <div><dt>Lead with</dt><dd>Your strongest launch case study, framed around footfall and first-year sales.</dd></div>
-          <div><dt>When</dt><dd>Within the next three weeks, while the agency line-up is still open.</dd></div>
-          <div><dt>Posted</dt><dd>The point of view, printed, with a short signed note from you, to iCAUR's UK office. Timed to land the day before Email 1.</dd></div>
-        </dl>
-      </div>
-      <div class="pack-col">
-        <div class="pov">
-          <h4>Point of view: "Winning the first 90 days in UK showrooms"</h4>
-          <ol>
-            <li>Launch the dealers before the public: a dealer-first launch kit so every showroom tells the same story on day one.</li>
-            <li>Test drives as the media plan: book-a-drive as the main call to action, measured weekly.</li>
-            <li>Borrow trust early: owner stories from markets where the brand already sells, cut for UK audiences.</li>
-          </ol>
-          <p class="src" style="margin:10px 0 0">One page, in your name, to attach. A conversation opener, not a pitch.</p>
-        </div>
-        <details class="mail" open>
-          <summary>Email 1 of 3 · send this week</summary>
-          <p>Hi Claire, congrats on the iCAUR role. Launching a car brand into UK showrooms from scratch is a rare brief. We helped [your launch client] get people through the door in their first year, not just get noticed. You should have a one-pager from us on your desk about the first 90 days, and I've attached it here too. Would a short call be useful while you're putting the agency line-up together?</p>
-        </details>
-        <details class="mail">
-          <summary>Email 2 of 3 · one week later</summary>
-          <p>Hi Claire, just following up on the one-pager. The dealer-first idea is the one I'd most like to talk through, as it's where launches like this are usually won or lost. Happy to keep it to 20 minutes.</p>
-        </details>
-        <details class="mail">
-          <summary>Email 3 of 3 · two weeks later</summary>
-          <p>Hi Claire, I'll leave it here for now. If the agency line-up is still open in the new year, we'd love to be in the conversation. Good luck with the launch.</p>
-        </details>
-      </div>
-    </div>
-
-    <div class="panel pack-body" role="tabpanel" id="p-social" aria-labelledby="t-social" hidden>
-      <div class="pack-col">
-        <p class="brand">LEON</p>
-        <span class="trigger">Trigger: new CMO · 16 Nov 2026</span>
-        <dl>
-          <div><dt>Why now</dt><dd>LEON has a new chief marketing officer whose brief is customer love, loyalty and like-for-like sales. Loyalty and community are social's home ground. <span class="src">Source: Retail Times, 16 Nov 2026</span></dd></div>
-          <div><dt>Who decides</dt><dd>Romy Miller, CMO. Spent 2013 to 2021 as marketing and commercial director at GAIL's, helping grow it to 80 bakeries and a £200m sale. <span class="src">Source: Retail Times</span></dd></div>
-          <div><dt>What she'll respond to</dt><dd>Regulars, not reach. Her track record is building a brand people return to every week.</dd></div>
-          <div><dt>Lead with</dt><dd>Your best community or loyalty case study, framed around repeat visits.</dd></div>
-          <div><dt>Posted</dt><dd>Your point of view, printed, to LEON's head office the day before Email 1.</dd></div>
-        </dl>
-      </div>
-      <div class="pack-col">
-        <div class="pov">
-          <h4>Point of view: "Turning LEON's regulars into its media"</h4>
-          <ol>
-            <li>Make the regulars the content: a weekly series built from real customers and their usual orders.</li>
-            <li>Reward the habit in public: loyalty moments people want to share, not points.</li>
-            <li>One local story per restaurant per month, so social drives like-for-likes, not just likes.</li>
-          </ol>
-        </div>
-        <details class="mail" open>
-          <summary>Email 1 of 3 · send this week</summary>
-          <p>Hi Romy, congrats on the LEON role. What you built at GAIL's is the kind of brand people come back to every week, and that's the bit social does best when it's done well. There's a one-pager on your desk with three ideas for turning LEON's regulars into its media. Would a short call be useful?</p>
-        </details>
-      </div>
-    </div>
-    <div class="panel pack-body" role="tabpanel" id="p-pr" aria-labelledby="t-pr" hidden>
-      <div class="pack-col">
-        <p class="brand">Space NK</p>
-        <span class="trigger">Trigger: promoted to CMO · 19 Nov 2026</span>
-        <dl>
-          <div><dt>Why now</dt><dd>Space NK's new CMO now runs PR, brand, CRM, store design and customer service, not just marketing channels. PR is newly hers. <span class="src">Source: PR Newswire, 19 Nov 2026</span></dd></div>
-          <div><dt>Who decides</dt><dd>Leanne Rouse, CMO. Nine years at Space NK, previously its marketing director. Led the record-breaking Cécred and Touchland launches. <span class="src">Source: PR Newswire</span></dd></div>
-          <div><dt>What she'll respond to</dt><dd>Launch moments that sell. Her proudest work is launches that broke commercial records.</dd></div>
-          <div><dt>Lead with</dt><dd>A beauty or retail launch where coverage turned into sales.</dd></div>
-          <div><dt>Posted</dt><dd>Your point of view, printed, to Space NK's London office.</dd></div>
-        </dl>
-      </div>
-      <div class="pack-col">
-        <div class="pov">
-          <h4>Point of view: "Every launch a news story"</h4>
-          <ol>
-            <li>A launch calendar run as a newsroom, so each exclusive brand arrival earns its own coverage.</li>
-            <li>Store moments built for the press as much as for shoppers.</li>
-            <li>PR and CRM briefed together, so the story and the offer land in the same week.</li>
-          </ol>
-        </div>
-        <details class="mail" open>
-          <summary>Email 1 of 3 · send this week</summary>
-          <p>Hi Leanne, congrats on the CMO role. With PR now in your remit, I thought it might help to share how we'd make every Space NK launch its own news story. There's a one-pager on its way to you. Would a short call be useful in the new year?</p>
-        </details>
-      </div>
-    </div>
-    <div class="panel pack-body" role="tabpanel" id="p-b2b" aria-labelledby="t-b2b" hidden>
-      <div class="pack-col">
-        <p class="brand">Axa Commercial</p>
-        <span class="trigger">Trigger: new marketing director · Nov 2026</span>
-        <dl>
-          <div><dt>Why now</dt><dd>Axa Commercial has appointed a marketing and broker development director, joining marketing and broker relationships in one role. <span class="src">Source: Insurance Times, Nov 2026</span></dd></div>
-          <div><dt>Who decides</dt><dd>Carolyn Rich, marketing and broker development director.</dd></div>
-          <div><dt>What she'll respond to</dt><dd>Marketing that brokers actually use. Her role is judged on broker relationships as much as brand.</dd></div>
-          <div><dt>Lead with</dt><dd>A B2B case study where content or campaigns made a sales or partner channel more effective.</dd></div>
-          <div><dt>Posted</dt><dd>Your point of view, printed, to Axa Commercial's UK office.</dd></div>
-        </dl>
-      </div>
-      <div class="pack-col">
-        <div class="pov">
-          <h4>Point of view: "Marketing brokers want to forward"</h4>
-          <ol>
-            <li>A monthly risk briefing brokers can send to their own clients under their name.</li>
-            <li>Broker-ready campaign kits, so local brokers run Axa campaigns in a day.</li>
-            <li>One shared measure for marketing and broker teams: quotes started through broker content.</li>
-          </ol>
-        </div>
-        <details class="mail" open>
-          <summary>Email 1 of 3 · send this week</summary>
-          <p>Hi Carolyn, congrats on the new role. Putting marketing and broker development together is a smart move, and it opens up some ideas we've seen work in B2B. There's a one-pager on its way to you with three of them. Would a short call be useful?</p>
-        </details>
-      </div>
-    </div>
-    <div class="pack-foot">Every fact carries its source and date. Every pack has five brands like this, picked for your kind of agency. Your strongest one also goes in the post.</div>
-  </article>
-
 
   <section>
     <h2>Referrals are slowing. Pitches cost a fortune. Start more conversations you can win.</h2>
@@ -404,9 +405,9 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
   <section>
     <h2>How it works</h2>
     <div class="steps" style="grid-template-columns: repeat(3, 1fr)">
-      <div class="step"><span class="n">1 · We pick the one</span><h3>The brand most likely to hire you</h3><p>We watch new marketing leaders, funding, launches, hiring and reviews across UK brands, and score each one on timing and fit with your work. The best one each week gets the full treatment.</p></div>
-      <div class="step"><span class="n">2 · We make the thing</span><h3>Your idea, on their desk</h3><p>A one-page point of view for that brand, in your name and your colours, printed on heavyweight card and posted to the person who decides. You approve it before it goes.</p></div>
-      <div class="step"><span class="n">3 · You follow up</span><h3>An email they're expecting</h3><p>The next day your first email lands, written in your voice and ready to send. Two follow-ups are drafted too. Every fact links to a dated public source.</p></div>
+      <div class="step"><span class="n">1 · We find them</span><h3>Brands with a reason to hire</h3><p>New marketing leaders, funding, launches, hiring and reviews across UK brands, scored on timing and on fit with your work. The best five reach you.</p></div>
+      <div class="step"><span class="n">2 · We work out the way in</span><h3>The person, the angle, the proof</h3><p>Who decides and what they care about, the angle that fits them, the case study that proves it, and every fact linked to a dated source.</p></div>
+      <div class="step"><span class="n">3 · You make the move</span><h3>An email, or something on their desk</h3><p>Send the drafted email, have your studio make the suggested first move, or ask us to get it on their desk in 48 hours.</p></div>
     </div>
   </section>
 
@@ -419,9 +420,9 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
             <thead><tr><th>We do</th><th>You do</th></tr></thead>
             <tbody>
               <tr><td>Scan thousands of public signals every week</td><td>Decide which brands are worth your time</td></tr>
-              <tr><td>Research the person and draft the point of view and emails</td><td>Put the words into your voice</td></tr>
+              <tr><td>Research the person and work out the angle and emails</td><td>Put the words into your voice</td></tr>
               <tr><td>Match your case studies to each brand</td><td>Press send from your own inbox, or don't</td></tr>
-              <tr><td>Print and post the point of view to your best lead each week</td><td>Say yes before it goes</td></tr>
+              <tr><td>Print and courier a desk drop when you ask</td><td>Design it, or approve ours</td></tr>
             </tbody>
           </table>
         </div>
@@ -448,8 +449,8 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
       <div>
         <ul>
           <li>Four free Mondays first. No card to start.</li>
-          <li>One desk drop every week: your idea, printed and posted to the brand most likely to hire you. Printing and postage included.</li>
-          <li>Four more brands every Monday, each with a profile, a point of view and three emails</li>
+          <li>Five brands every Monday, each with who decides, why now, the angle, your best case study, a first-move idea and three emails</li>
+          <li>Desk drops when you want them, from £49 each</li>
           <li>Cancel any time, with one email</li>
           <li>No annual contract</li>
         </ul>
@@ -463,11 +464,11 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
     <h2>Questions</h2>
     <div class="faq">
       <div><h3>Couldn't I just do this with ChatGPT?</h3><p>You could write the emails with it. The hard part is knowing which five brands to write to this week: spotting the marketing director appointed on Tuesday and the funding round announced on Thursday, checking both, matching them to the right case study, and doing it all again next Monday. That's about a day of a new-business person's week. We do it for £299 a month, and you keep the judgement.</p></div>
-      <div><h3>Isn't the one-pager spec work?</h3><p>No. It's a short point of view that shows you've done your homework, so the first meeting is about their problem rather than your credentials deck. We draft it, so none of your team's time goes into it, and your best ideas stay for when they're paying.</p></div>
+      <div><h3>Isn't the first-move idea spec work?</h3><p>No. It's a small, sharp gesture that shows you've done your homework, so the first meeting is about their problem rather than your credentials deck. Your best ideas stay for when they're paying.</p></div>
       <div><h3>Do you ever send emails for me?</h3><p>Never. We don't have access to your inbox. You read everything and send it yourself, so your name and your relationships stay in your hands.</p></div>
       <div><h3>How do you pick the brands?</h3><p>We track the moments a brand is most likely to bring in a new agency: a change in marketing leadership, fresh funding, a launch or market entry, a run of marketing hires, a review or a shift in campaign activity. Each signal is scored on timing and on fit with your work, and only the strongest five reach you.</p></div>
       <div><h3>Is this OK under UK GDPR and PECR?</h3><p>It's built for UK B2B rules. We research companies and professional roles from public sources only. Every email we draft for you includes your identity and an opt-out. We flag sole traders and partnerships, which PECR treats differently. And because you send from your own account, you stay in control of who hears from you.</p></div>
-      <div><h3>What do you post, and where?</h3><p>Each week, for your strongest lead, we print the one-page point of view in your agency's colours and post it to the brand's office with a short note from you, timed to land the day before your first email. You see a preview first. Office addresses only, never homes. Nothing is posted until you say yes.</p></div>
+      <div><h3>Do you post things for me?</h3><p>Only when you ask. Send us your design, or approve our layout in your brand, and we'll print, pack and courier it to the brand's office within 48 hours. Office addresses only, never homes. Desk drops start at £49.</p></div>
       <div><h3>Who's behind The Wedge?</h3><p>The Wedge was built by someone who's spent nearly two decades in and around agencies and innovation studios, on both the pitching side and the buying side. AI does the research and the first drafts. The rules about what makes a lead worth your time come from years of winning and losing pitches. Questions go to a real inbox: hello@thewedgebrief.com.</p></div>
       <div><h3>What happens after four Mondays?</h3><p>We'll email to ask if you want to carry on at £299 a month. If you do, we'll send a payment link. If you don't, ignore it and the packs stop. Nothing is charged automatically.</p></div>
     </div>
@@ -475,7 +476,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
 
   <section class="close">
     <h2>Try four Mondays on us.</h2>
-    <p>Send us your website and your first five brands arrive next Monday, with the points of view, the emails and your first envelope.</p>
+    <p>Send us your website and your first five brands arrive next Monday, with who to approach, the angle in and the emails ready.</p>
     <div class="cta">
       <a class="btn" href="#start">Start my 4 free Mondays</a>
       <span class="email">hello@thewedgebrief.com</span>
