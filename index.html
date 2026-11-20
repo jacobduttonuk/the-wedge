@@ -112,6 +112,13 @@ footer { border-top: 2px solid var(--ink); padding: 28px 0 40px; font-size: 13.5
 footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 
 
+/* Sample tabs */
+.tabs { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 2px solid var(--ink); }
+.tabs button { font-family: var(--mono); font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.06em; padding: 12px 18px; border: none; border-right: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--wedge); font-weight: 600; }
+.tabs button:focus-visible { outline: 3px solid var(--ink); outline-offset: -3px; }
+.panel[hidden] { display: none; }
+
 /* Sign-up form */
 .signup { display: flex; flex-wrap: wrap; gap: 10px; align-items: stretch; max-width: 720px; }
 .signup label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
@@ -135,18 +142,18 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
 .paper-shadow { box-shadow: 0 0.15cqw 0.2cqw rgba(0,0,0,0.25), 0 1.2cqw 2.2cqw -0.6cqw rgba(0,0,0,0.45), 0 3.5cqw 6cqw -2cqw rgba(0,0,0,0.5); }
 .env { position: absolute; left: 3%; top: 33%; width: 52%; aspect-ratio: 229 / 162; transform: rotate(-8deg);
-  background: linear-gradient(160deg, #ffd43b 0%, #f5c518 45%, #e6b40c 100%); }
+  background: linear-gradient(160deg, #2f5d50 0%, #244a40 50%, #1c3c34 100%); }
 .env::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,0.18), transparent 30%, transparent 70%, rgba(0,0,0,0.08)); }
 .env .grain { opacity: 0.35; }
-.env .stamp { position: absolute; right: 5%; top: 7%; width: 13%; aspect-ratio: 5 / 6; border: 0.25cqw solid #101317; display: grid; place-items: center; text-align: center; font-family: var(--mono); font-size: 1.05cqw; line-height: 1.2; color: #101317; transform: rotate(1.5deg); }
+.env .stamp { position: absolute; right: 5%; top: 7%; width: 13%; aspect-ratio: 5 / 6; border: 0.25cqw solid #f3efe4; display: grid; place-items: center; text-align: center; font-family: var(--mono); font-size: 1.05cqw; line-height: 1.2; color: #f3efe4; transform: rotate(1.5deg); }
 .env .stamp b { display: block; font-family: var(--display); font-size: 2.6cqw; line-height: 1; }
-.env .addr { position: absolute; left: 22%; top: 42%; font-family: "Caveat", "Segoe Script", cursive; font-weight: 700; font-size: 3.1cqw; line-height: 1.05; color: #13213f; transform: rotate(-1deg); }
-.env .seal { position: absolute; left: 6%; top: 9%; width: 7%; aspect-ratio: 1; background: #101317; clip-path: polygon(0 0, 100% 50%, 0 100%); }
-.env .from { position: absolute; left: 6%; bottom: 8%; font-family: var(--mono); font-size: 0.95cqw; letter-spacing: 0.12em; color: rgba(16,19,23,0.75); text-transform: uppercase; }
+.env .addr { position: absolute; left: 22%; top: 42%; font-family: "Caveat", "Segoe Script", cursive; font-weight: 700; font-size: 3.1cqw; line-height: 1.05; color: #f3efe4; transform: rotate(-1deg); }
+.env .seal { position: absolute; left: 6%; top: 9%; font-family: var(--display); font-weight: 900; font-size: 2.2cqw; letter-spacing: -0.02em; color: #f3efe4; }
+.env .from { position: absolute; left: 6%; bottom: 8%; font-family: var(--mono); font-size: 0.95cqw; letter-spacing: 0.12em; color: rgba(243,239,228,0.75); text-transform: uppercase; }
 .card { position: absolute; left: 58%; top: 4%; width: 31%; aspect-ratio: 148 / 210; transform: rotate(6deg); background: linear-gradient(170deg, #fdfcf8, #f3f0e7); padding: 3.2cqw 2.8cqw; color: #101317; }
 .card .grain { opacity: 0.25; }
 .card .for { font-family: var(--mono); font-size: 0.85cqw; letter-spacing: 0.12em; text-transform: uppercase; color: #6a6f76; margin: 0 0 1.4cqw; }
-.card .bar { width: 4cqw; height: 0.6cqw; background: #f5c518; margin: 0 0 1.2cqw; }
+.card .bar { width: 4cqw; height: 0.6cqw; background: #2f5d50; margin: 0 0 1.2cqw; }
 .card .title { font-family: var(--display); font-weight: 900; font-size: 2.45cqw; line-height: 1.02; letter-spacing: -0.03em; margin: 0 0 1.8cqw; }
 .card ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 1.1cqw; }
 .card li { font-family: var(--body); font-size: 1.02cqw; line-height: 1.35; padding-top: 0.8cqw; border-top: 0.12cqw solid #d5d2c8; }
@@ -193,7 +200,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
 
   <div class="hero">
     <h1>Five brands with a reason to hire an agency. <span class="hl">In your inbox every Monday.</span></h1>
-    <p class="lede">Each one comes with the trigger, a profile of the person who decides, your best-fit case study, a one-page point of view in your name and three emails ready to send. Your strongest lead each week also gets a yellow envelope on their desk the day before your email lands. You approve everything. We never touch your inbox.</p>
+    <p class="lede">Each one comes with the trigger, a profile of the person who decides, your best-fit case study, a one-page point of view in your name and three emails ready to send. Your strongest lead each week also gets a printed version on their desk, in your agency's colours, the day before your email lands. You approve everything. We never touch your inbox.</p>
     <form class="signup" id="start" action="https://formsubmit.co/hello@thewedgebrief.com" method="POST">
       <label for="f-email">Work email</label>
       <input id="f-email" type="email" name="email" placeholder="Work email" required autocomplete="email">
@@ -212,8 +219,14 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
 
   <!-- Sample pack -->
   <article class="pack" aria-label="Sample Monday pack">
-    <div class="pack-head"><span>Sample pack · Monday 16 November 2026 · Brand 1 of 5</span><span>Built for a launch-led creative agency</span></div>
-    <div class="pack-body">
+    <div class="pack-head"><span>Sample pack · Monday 16 November 2026</span><span>Pick your kind of agency</span></div>
+    <div class="tabs" role="tablist" aria-label="Sample by agency type">
+      <button role="tab" aria-selected="true" aria-controls="p-brand" id="t-brand">Brand and launch</button>
+      <button role="tab" aria-selected="false" aria-controls="p-social" id="t-social">Social and content</button>
+      <button role="tab" aria-selected="false" aria-controls="p-pr" id="t-pr">PR</button>
+      <button role="tab" aria-selected="false" aria-controls="p-b2b" id="t-b2b">B2B</button>
+    </div>
+    <div class="panel pack-body" role="tabpanel" id="p-brand" aria-labelledby="t-brand">
       <div class="pack-col">
         <p class="brand">iCAUR UK</p>
         <span class="trigger">Trigger: new head of marketing · 19 Nov 2026</span>
@@ -250,7 +263,89 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
         </details>
       </div>
     </div>
-    <div class="pack-foot">Every fact carries its source and date. Four more brands like this arrive in the same pack, and this one also goes in the post.</div>
+
+    <div class="panel pack-body" role="tabpanel" id="p-social" aria-labelledby="t-social" hidden>
+      <div class="pack-col">
+        <p class="brand">LEON</p>
+        <span class="trigger">Trigger: new CMO · 16 Nov 2026</span>
+        <dl>
+          <div><dt>Why now</dt><dd>LEON has a new chief marketing officer whose brief is customer love, loyalty and like-for-like sales. Loyalty and community are social's home ground. <span class="src">Source: Retail Times, 16 Nov 2026</span></dd></div>
+          <div><dt>Who decides</dt><dd>Romy Miller, CMO. Spent 2013 to 2021 as marketing and commercial director at GAIL's, helping grow it to 80 bakeries and a £200m sale. <span class="src">Source: Retail Times</span></dd></div>
+          <div><dt>What she'll respond to</dt><dd>Regulars, not reach. Her track record is building a brand people return to every week.</dd></div>
+          <div><dt>Lead with</dt><dd>Your best community or loyalty case study, framed around repeat visits.</dd></div>
+          <div><dt>Posted</dt><dd>Your point of view, printed, to LEON's head office the day before Email 1.</dd></div>
+        </dl>
+      </div>
+      <div class="pack-col">
+        <div class="pov">
+          <h4>Point of view: "Turning LEON's regulars into its media"</h4>
+          <ol>
+            <li>Make the regulars the content: a weekly series built from real customers and their usual orders.</li>
+            <li>Reward the habit in public: loyalty moments people want to share, not points.</li>
+            <li>One local story per restaurant per month, so social drives like-for-likes, not just likes.</li>
+          </ol>
+        </div>
+        <details class="mail" open>
+          <summary>Email 1 of 3 · send this week</summary>
+          <p>Hi Romy, congrats on the LEON role. What you built at GAIL's is the kind of brand people come back to every week, and that's the bit social does best when it's done well. There's a one-pager on your desk with three ideas for turning LEON's regulars into its media. Would a short call be useful?</p>
+        </details>
+      </div>
+    </div>
+    <div class="panel pack-body" role="tabpanel" id="p-pr" aria-labelledby="t-pr" hidden>
+      <div class="pack-col">
+        <p class="brand">Space NK</p>
+        <span class="trigger">Trigger: promoted to CMO · 19 Nov 2026</span>
+        <dl>
+          <div><dt>Why now</dt><dd>Space NK's new CMO now runs PR, brand, CRM, store design and customer service, not just marketing channels. PR is newly hers. <span class="src">Source: PR Newswire, 19 Nov 2026</span></dd></div>
+          <div><dt>Who decides</dt><dd>Leanne Rouse, CMO. Nine years at Space NK, previously its marketing director. Led the record-breaking Cécred and Touchland launches. <span class="src">Source: PR Newswire</span></dd></div>
+          <div><dt>What she'll respond to</dt><dd>Launch moments that sell. Her proudest work is launches that broke commercial records.</dd></div>
+          <div><dt>Lead with</dt><dd>A beauty or retail launch where coverage turned into sales.</dd></div>
+          <div><dt>Posted</dt><dd>Your point of view, printed, to Space NK's London office.</dd></div>
+        </dl>
+      </div>
+      <div class="pack-col">
+        <div class="pov">
+          <h4>Point of view: "Every launch a news story"</h4>
+          <ol>
+            <li>A launch calendar run as a newsroom, so each exclusive brand arrival earns its own coverage.</li>
+            <li>Store moments built for the press as much as for shoppers.</li>
+            <li>PR and CRM briefed together, so the story and the offer land in the same week.</li>
+          </ol>
+        </div>
+        <details class="mail" open>
+          <summary>Email 1 of 3 · send this week</summary>
+          <p>Hi Leanne, congrats on the CMO role. With PR now in your remit, I thought it might help to share how we'd make every Space NK launch its own news story. There's a one-pager on its way to you. Would a short call be useful in the new year?</p>
+        </details>
+      </div>
+    </div>
+    <div class="panel pack-body" role="tabpanel" id="p-b2b" aria-labelledby="t-b2b" hidden>
+      <div class="pack-col">
+        <p class="brand">Axa Commercial</p>
+        <span class="trigger">Trigger: new marketing director · Nov 2026</span>
+        <dl>
+          <div><dt>Why now</dt><dd>Axa Commercial has appointed a marketing and broker development director, joining marketing and broker relationships in one role. <span class="src">Source: Insurance Times, Nov 2026</span></dd></div>
+          <div><dt>Who decides</dt><dd>Carolyn Rich, marketing and broker development director.</dd></div>
+          <div><dt>What she'll respond to</dt><dd>Marketing that brokers actually use. Her role is judged on broker relationships as much as brand.</dd></div>
+          <div><dt>Lead with</dt><dd>A B2B case study where content or campaigns made a sales or partner channel more effective.</dd></div>
+          <div><dt>Posted</dt><dd>Your point of view, printed, to Axa Commercial's UK office.</dd></div>
+        </dl>
+      </div>
+      <div class="pack-col">
+        <div class="pov">
+          <h4>Point of view: "Marketing brokers want to forward"</h4>
+          <ol>
+            <li>A monthly risk briefing brokers can send to their own clients under their name.</li>
+            <li>Broker-ready campaign kits, so local brokers run Axa campaigns in a day.</li>
+            <li>One shared measure for marketing and broker teams: quotes started through broker content.</li>
+          </ol>
+        </div>
+        <details class="mail" open>
+          <summary>Email 1 of 3 · send this week</summary>
+          <p>Hi Carolyn, congrats on the new role. Putting marketing and broker development together is a smart move, and it opens up some ideas we've seen work in B2B. There's a one-pager on its way to you with three of them. Would a short call be useful?</p>
+        </details>
+      </div>
+    </div>
+    <div class="pack-foot">Every fact carries its source and date. Every pack has five brands like this, picked for your kind of agency. Your strongest one also goes in the post.</div>
   </article>
 
   <section class="first" aria-labelledby="post-h">
@@ -258,7 +353,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
       <figure class="scene" aria-label="Sample of the posted envelope, printed point of view and handwritten note">
         <div class="env paper-shadow">
           <div class="grain"></div>
-          <div class="seal"></div>
+          <div class="seal">Northfold</div>
           <div class="stamp"><span><b>1st</b>UK postage<br>paid</span></div>
           <div class="addr">Claire Andrews<br>Head of Marketing<br>iCAUR UK</div>
           <div class="from">From Northfold Studio</div>
@@ -282,14 +377,14 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
       </figure>
       <div class="post-copy">
         <h2 id="post-h">The envelope they can't ignore.</h2>
-        <p>Inboxes are full. Desks aren't. For your strongest lead each week, we print the point of view and post it to their office, timed to land the day before your first email.</p>
+        <p>Inboxes are full. Desks aren't. For your strongest lead each week, we print the point of view and post it to their office, timed to land the day before your first email. You see a preview first, and nothing goes in the post until you say yes.</p>
         <ul>
-          <li>A bright yellow envelope, addressed by hand</li>
+          <li>An envelope in your agency's colours, with your name on it, not ours</li>
           <li>The point of view on heavyweight card, in your name</li>
-          <li>A short handwritten note signed from you</li>
+          <li>A short note in a handwriting-style print. Approve ours, or write your own in 30 seconds</li>
         </ul>
         <p>So when your email arrives, it isn't cold. It's the follow-up to something already sitting on their desk.</p>
-        <p class="caption">Sample for illustration. Northfold Studio is a made-up agency.</p>
+        <p class="caption">Sample for illustration. Northfold Studio is a made-up agency, shown in its own colours.</p>
       </div>
     </div>
   </section>
@@ -299,7 +394,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
     <div class="proof">
       <div class="stat"><div class="num">76→44%</div><p>Referrals fell from 76% to 44% as a top source of agency new business in a year.</p><cite>RSW/US Agency New Business Report, 2026</cite></div>
       <div class="stat"><div class="num">63%</div><p>of small UK agencies say creating new business opportunities is harder than last year.</p><cite>New Business Barometer 2026, jfdi/Opinium</cite></div>
-      <div class="stat"><div class="num">€43,804</div><p>is the average cost of a single new-business pitch across European agencies.</p><cite>EACA, Cost of Pitching 2025</cite></div>
+      <div class="stat"><div class="num">75%</div><p>of agencies say it's harder to break through to prospects, up from 35% a year earlier.</p><cite>RSW/US Agency New Business Report, 2026</cite></div>
     </div>
   </section>
 
@@ -333,7 +428,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
         <p class="never-title">What we'll never do</p>
         <ul class="never">
           <li>Send from your inbox</li>
-          <li>Email a brand on your behalf</li>
+          <li>Put anything in front of a brand you haven't approved</li>
           <li>Sell or share your data</li>
           <li>Lock you into a contract</li>
         </ul>
@@ -346,7 +441,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
       <div>
         <h2>One price. Plain terms.</h2>
         <div class="big">£299<span> a month</span></div>
-        <p class="anchor">Less than 1% of the average cost of one new-business pitch. The big agency sales intelligence platforms start at about US$10,000 a year, on annual contracts only.</p>
+        <p class="anchor">A tenth of a typical outsourced new-business retainer, which usually runs £2,500 to £6,000 a month. The big agency intelligence platforms start at about US$10,000 a year, on annual contracts only.</p>
       </div>
       <div>
         <ul>
@@ -370,7 +465,8 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
       <div><h3>Do you ever send emails for me?</h3><p>Never. We don't have access to your inbox. You read everything and send it yourself, so your name and your relationships stay in your hands.</p></div>
       <div><h3>How do you pick the brands?</h3><p>We track the moments a brand is most likely to bring in a new agency: a change in marketing leadership, fresh funding, a launch or market entry, a run of marketing hires, a review or a shift in campaign activity. Each signal is scored on timing and on fit with your work, and only the strongest five reach you.</p></div>
       <div><h3>Is this OK under UK GDPR and PECR?</h3><p>It's built for UK B2B rules. We research companies and professional roles from public sources only. Every email we draft for you includes your identity and an opt-out. We flag sole traders and partnerships, which PECR treats differently. And because you send from your own account, you stay in control of who hears from you.</p></div>
-      <div><h3>What do you post, and where?</h3><p>Each week, for your strongest lead, we print the one-page point of view and post it to the brand's office with a short note signed from you, timed to land the day before your first email. Office addresses only, never homes. Nothing is posted until you say yes.</p></div>
+      <div><h3>What do you post, and where?</h3><p>Each week, for your strongest lead, we print the one-page point of view in your agency's colours and post it to the brand's office with a short note from you, timed to land the day before your first email. You see a preview first. Office addresses only, never homes. Nothing is posted until you say yes.</p></div>
+      <div><h3>Who's behind The Wedge?</h3><p>The Wedge was built by someone who's spent nearly two decades in and around agencies and innovation studios, on both the pitching side and the buying side. AI does the research and the first drafts. The rules about what makes a lead worth your time come from years of winning and losing pitches. Questions go to a real inbox: hello@thewedgebrief.com.</p></div>
       <div><h3>What happens after four Mondays?</h3><p>We'll email to ask if you want to carry on at £299 a month. If you do, we'll send a payment link. If you don't, ignore it and the packs stop. Nothing is charged automatically.</p></div>
     </div>
   </section>
@@ -389,9 +485,20 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
       <span>The Wedge is a trading name of Jacob Dutton Innovation Consultancy, a sole establishment licensed in Abu Dhabi, United Arab Emirates. Trade licence CN-6732426, Abu Dhabi Registration Authority.</span>
       <span><a href="privacy.html">Privacy notice</a> · hello@thewedgebrief.com</span>
     </div>
-    <span>Sources: RSW/US Agency New Business Report 2026; New Business Barometer 2026 (jfdi/Opinium); EACA Cost of Pitching 2025; Winmo pricing via Software Advice and GetApp listings.</span>
+    <span>Sources: RSW/US Agency New Business Report 2026; New Business Barometer 2026 (jfdi/Opinium); UK outsourced lead-generation retainer ranges via Lilach Bullock, 2026; Winmo pricing via Software Advice and GetApp listings.</span>
   </footer>
   <script>
+  (function () {
+    var tabs = document.querySelectorAll('.tabs [role="tab"]');
+    tabs.forEach(function (t) {
+      t.addEventListener("click", function () {
+        tabs.forEach(function (o) {
+          o.setAttribute("aria-selected", o === t ? "true" : "false");
+          document.getElementById(o.getAttribute("aria-controls")).hidden = (o !== t);
+        });
+      });
+    });
+  })();
   (function () {
     var f = document.getElementById("start");
     if (!f) return;
