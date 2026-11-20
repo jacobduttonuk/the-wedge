@@ -131,7 +131,7 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
 .form-msg { width: 100%; margin: 6px 0 0; font-size: 15px; font-weight: 600; }
 
 /* The envelope */
-.post-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 44px; align-items: center; }
+.post-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 44px; align-items: start; }
 .scene { position: relative; margin: 0; aspect-ratio: 16 / 11; container-type: inline-size; overflow: hidden; border: 2px solid var(--ink);
   background:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.012 0.42' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.12 0 0 0 0 0.07 0 0 0 0 0.03 0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"),
@@ -147,9 +147,10 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
 .env .grain { opacity: 0.35; }
 .env .stamp { position: absolute; right: 5%; top: 7%; width: 13%; aspect-ratio: 5 / 6; border: 0.25cqw solid #f3efe4; display: grid; place-items: center; text-align: center; font-family: var(--mono); font-size: 1.05cqw; line-height: 1.2; color: #f3efe4; transform: rotate(1.5deg); }
 .env .stamp b { display: block; font-family: var(--display); font-size: 2.6cqw; line-height: 1; }
-.env .addr { position: absolute; left: 22%; top: 42%; font-family: "Caveat", "Segoe Script", cursive; font-weight: 700; font-size: 3.1cqw; line-height: 1.05; color: #f3efe4; transform: rotate(-1deg); }
+.env .head { position: absolute; left: 6%; right: 22%; top: 30%; font-family: var(--display); font-weight: 900; font-size: 3.5cqw; line-height: 0.98; letter-spacing: -0.03em; color: #f3efe4; }
+.env .addr { position: absolute; left: 6%; bottom: 16%; font-family: "Caveat", "Segoe Script", cursive; font-weight: 700; font-size: 2.1cqw; line-height: 1.05; color: #f3efe4; transform: rotate(-1deg); }
 .env .seal { position: absolute; left: 6%; top: 9%; font-family: var(--display); font-weight: 900; font-size: 2.2cqw; letter-spacing: -0.02em; color: #f3efe4; }
-.env .from { position: absolute; left: 6%; bottom: 8%; font-family: var(--mono); font-size: 0.95cqw; letter-spacing: 0.12em; color: rgba(243,239,228,0.75); text-transform: uppercase; }
+.env .from { position: absolute; right: 6%; bottom: 8%; font-family: var(--mono); font-size: 0.95cqw; letter-spacing: 0.12em; color: rgba(243,239,228,0.75); text-transform: uppercase; }
 .card { position: absolute; left: 58%; top: 4%; width: 31%; aspect-ratio: 148 / 210; transform: rotate(6deg); background: linear-gradient(170deg, #fdfcf8, #f3f0e7); padding: 3.2cqw 2.8cqw; color: #101317; }
 .card .grain { opacity: 0.25; }
 .card .for { font-family: var(--mono); font-size: 0.85cqw; letter-spacing: 0.12em; text-transform: uppercase; color: #6a6f76; margin: 0 0 1.4cqw; }
@@ -199,8 +200,8 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
   </header>
 
   <div class="hero">
-    <h1>Five brands with a reason to hire an agency. <span class="hl">In your inbox every Monday.</span></h1>
-    <p class="lede">Each one comes with the trigger, a profile of the person who decides, your best-fit case study, a one-page point of view in your name and three emails ready to send. Your strongest lead each week also gets a printed version on their desk, in your agency's colours, the day before your email lands. You approve everything. We never touch your inbox.</p>
+    <h1>Cold emails get deleted. <span class="hl">This lands on their desk.</span></h1>
+    <p class="lede">Every week we find the brand most likely to hire your agency right now, write a sharp idea for them in your name, and post it to the person who decides. Your email follows the next day, so it isn't cold any more. Plus four more brands worth a call, with the research and emails done.</p>
     <form class="signup" id="start" action="https://formsubmit.co/hello@thewedgebrief.com" method="POST">
       <label for="f-email">Work email</label>
       <input id="f-email" type="email" name="email" placeholder="Work email" required autocomplete="email">
@@ -217,9 +218,51 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
     <p class="fine" style="margin:12px 0 0">No card. £299 a month after. Cancel any time. Already had an email from us? Just reply "yes".</p>
   </div>
 
+  <section class="first" aria-labelledby="post-h" style="padding-top:8px">
+    <div class="post-grid">
+      <figure class="scene" aria-label="Sample of the posted envelope, printed point of view and handwritten note">
+        <div class="env paper-shadow">
+          <div class="grain"></div>
+          <div class="seal">Northfold</div>
+          <div class="stamp"><span><b>1st</b>UK postage<br>paid</span></div>
+          <div class="head">Winning the first 90 days in UK showrooms</div>
+          <div class="addr">For Claire Andrews, iCAUR UK</div>
+          <div class="from">From Northfold Studio</div>
+        </div>
+        <div class="card paper-shadow">
+          <div class="grain"></div>
+          <p class="for">Prepared for Claire Andrews · iCAUR UK</p>
+          <div class="bar"></div>
+          <p class="title">Winning the first 90 days in UK showrooms</p>
+          <ol>
+            <li><b>1. Launch the dealers first</b>One launch kit, so every showroom tells the same story on day one.</li>
+            <li><b>2. Make test drives the media plan</b>Book-a-drive as the call to action, measured every week.</li>
+            <li><b>3. Borrow trust early</b>Owner stories from markets where iCAUR already sells.</li>
+          </ol>
+          <p class="sig">Northfold Studio · London</p>
+        </div>
+        <div class="note paper-shadow">
+          <div class="grain"></div>
+          Claire, a few thoughts on the launch. Worth 20 minutes? Sam, Northfold
+        </div>
+      </figure>
+      <div class="post-copy">
+        <h2 id="post-h">One brand a week. One thing they can't ignore.</h2>
+        <p>Inboxes are full. Desks aren't. Each week we pick the one brand with the best reason to hire you, print your idea for them on heavyweight card, with the headline on the outside, and post it to the person who decides. It lands the day before your first email. You see a preview first, and nothing goes in the post until you say yes.</p>
+        <ul>
+          <li>A rigid mailer in your agency's colours, with the idea's headline printed on the front</li>
+          <li>The point of view on heavyweight card, in your name</li>
+          <li>A short note in a handwriting-style print. Approve ours, or write your own in 30 seconds</li>
+        </ul>
+        <p>It's built to be left on a desk, pinned up and shown around, not opened and binned. When your email arrives, it's the follow-up to something they've already read.</p>
+        <p class="caption">Sample for illustration. Northfold Studio is a made-up agency, shown in its own colours.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Sample pack -->
   <article class="pack" aria-label="Sample Monday pack">
-    <div class="pack-head"><span>Sample pack · Monday 16 November 2026</span><span>Pick your kind of agency</span></div>
+    <div class="pack-head"><span>The research behind it · sample Monday brief, 16 Nov 2026</span><span>Pick your kind of agency</span></div>
     <div class="tabs" role="tablist" aria-label="Sample by agency type">
       <button role="tab" aria-selected="true" aria-controls="p-brand" id="t-brand">Brand and launch</button>
       <button role="tab" aria-selected="false" aria-controls="p-social" id="t-social">Social and content</button>
@@ -348,46 +391,6 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
     <div class="pack-foot">Every fact carries its source and date. Every pack has five brands like this, picked for your kind of agency. Your strongest one also goes in the post.</div>
   </article>
 
-  <section class="first" aria-labelledby="post-h">
-    <div class="post-grid">
-      <figure class="scene" aria-label="Sample of the posted envelope, printed point of view and handwritten note">
-        <div class="env paper-shadow">
-          <div class="grain"></div>
-          <div class="seal">Northfold</div>
-          <div class="stamp"><span><b>1st</b>UK postage<br>paid</span></div>
-          <div class="addr">Claire Andrews<br>Head of Marketing<br>iCAUR UK</div>
-          <div class="from">From Northfold Studio</div>
-        </div>
-        <div class="card paper-shadow">
-          <div class="grain"></div>
-          <p class="for">Prepared for Claire Andrews · iCAUR UK</p>
-          <div class="bar"></div>
-          <p class="title">Winning the first 90 days in UK showrooms</p>
-          <ol>
-            <li><b>1. Launch the dealers first</b>One launch kit, so every showroom tells the same story on day one.</li>
-            <li><b>2. Make test drives the media plan</b>Book-a-drive as the call to action, measured every week.</li>
-            <li><b>3. Borrow trust early</b>Owner stories from markets where iCAUR already sells.</li>
-          </ol>
-          <p class="sig">Northfold Studio · London</p>
-        </div>
-        <div class="note paper-shadow">
-          <div class="grain"></div>
-          Claire, a few thoughts on the launch. Worth 20 minutes? Sam, Northfold
-        </div>
-      </figure>
-      <div class="post-copy">
-        <h2 id="post-h">The envelope they can't ignore.</h2>
-        <p>Inboxes are full. Desks aren't. For your strongest lead each week, we print the point of view and post it to their office, timed to land the day before your first email. You see a preview first, and nothing goes in the post until you say yes.</p>
-        <ul>
-          <li>An envelope in your agency's colours, with your name on it, not ours</li>
-          <li>The point of view on heavyweight card, in your name</li>
-          <li>A short note in a handwriting-style print. Approve ours, or write your own in 30 seconds</li>
-        </ul>
-        <p>So when your email arrives, it isn't cold. It's the follow-up to something already sitting on their desk.</p>
-        <p class="caption">Sample for illustration. Northfold Studio is a made-up agency, shown in its own colours.</p>
-      </div>
-    </div>
-  </section>
 
   <section>
     <h2>Referrals are slowing. Pitches cost a fortune. Start more conversations you can win.</h2>
@@ -399,12 +402,11 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
   </section>
 
   <section>
-    <h2>How the brands are picked</h2>
-    <div class="steps">
-      <div class="step"><span class="n">1 · Signals</span><h3>We watch the market</h3><p>Trade press, company announcements, Companies House filings, funding news, marketing job ads, leadership moves and agency review news across UK brands.</p></div>
-      <div class="step"><span class="n">2 · Selection</span><h3>We match it to you</h3><p>Each signal is scored on timing and on fit with your sectors, your size and your case studies. Only the strongest five make the pack.</p></div>
-      <div class="step"><span class="n">3 · Checks</span><h3>We check the facts</h3><p>The trigger is current, the person is still in the role, and every fact links to a dated public source.</p></div>
-      <div class="step"><span class="n">4 · You</span><h3>You decide</h3><p>Edit what you like and send from your own email. Or don't. Nothing goes anywhere without you.</p></div>
+    <h2>How it works</h2>
+    <div class="steps" style="grid-template-columns: repeat(3, 1fr)">
+      <div class="step"><span class="n">1 · We pick the one</span><h3>The brand most likely to hire you</h3><p>We watch new marketing leaders, funding, launches, hiring and reviews across UK brands, and score each one on timing and fit with your work. The best one each week gets the full treatment.</p></div>
+      <div class="step"><span class="n">2 · We make the thing</span><h3>Your idea, on their desk</h3><p>A one-page point of view for that brand, in your name and your colours, printed on heavyweight card and posted to the person who decides. You approve it before it goes.</p></div>
+      <div class="step"><span class="n">3 · You follow up</span><h3>An email they're expecting</h3><p>The next day your first email lands, written in your voice and ready to send. Two follow-ups are drafted too. Every fact links to a dated public source.</p></div>
     </div>
   </section>
 
@@ -446,8 +448,8 @@ footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: sp
       <div>
         <ul>
           <li>Four free Mondays first. No card to start.</li>
-          <li>Five brands every Monday, each with a profile, a point of view and three emails</li>
-          <li>Your strongest lead each week gets the point of view printed and posted to their office. Postage included.</li>
+          <li>One desk drop every week: your idea, printed and posted to the brand most likely to hire you. Printing and postage included.</li>
+          <li>Four more brands every Monday, each with a profile, a point of view and three emails</li>
           <li>Cancel any time, with one email</li>
           <li>No annual contract</li>
         </ul>
